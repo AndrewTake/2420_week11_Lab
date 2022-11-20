@@ -20,18 +20,16 @@ The script reads a configuration file that includes the following:
 2. Save both file in the directory /etc/systemd/system
 3. Change the permissions of the files to turn them executable
 	(type sudo chmod +x backup-service.service, type sudo chmod +x backup-timer.timer)
+4. Type sudo systemctl daemon-reload
+5. Type sudo systemctl start backup-service.service
+6. Type sudo systemctl enable --now backup-service
+7. Type sudo systemctl enable --now backup-timer.timer
 
 ## How to backup files:
 1. Create a file called backup.conf typing vim backup.conf.
 2. Inform in the first line the IP address of the machine.
 3. Inform in the susequent lines the complete path to the files that wiil be copied.
-4. Save the file in the same directory as the backup-one executable. 
+4. Save the file in the same directory as the backup executable file. 
 
 > The default username used by this script is **user1** so be sure that you have a user with this
 > username in your destination host. 
-
-## How to execute the script:
-
-To execute the script go to the path where you saved it and type the following command:
-
-> ./backup-script
