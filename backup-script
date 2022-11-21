@@ -33,6 +33,7 @@ rsync -e "ssh -i ~/.ssh/id_rsa1" -aPv ${DIR} user1@${IP}:/home/user1/rsync
 n=$((n+1))
 done < $filename
 
+echo "Done backup"
 }
 
 backup_files
