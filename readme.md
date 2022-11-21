@@ -3,7 +3,7 @@
 
 # Aline Hammermuller / Andrew Hull
 
-# backup-one - backup files from server-one to the backup-server
+## Backup-one - backup files from server-one to the backup-server
 
 ## backup-script 
 
