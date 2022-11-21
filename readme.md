@@ -1,11 +1,11 @@
 
-<h1>2420 Week 11 Lab</h1>
+# 2420 Week 11 Lab
 
 # Aline Hammermuller / Andrew Hull
 
 # backup-one - backup files from server-one to the backup-server
 
-<h2> backup-script </h2>
+## backup-script 
 
 The backup-script is a script that will backup files from server-one to the backup-server using rsync.
 The script reads a configuration file that includes the following: 
@@ -15,14 +15,14 @@ The script reads a configuration file that includes the following:
 
 ## Executable files storage
 
-<h2> File backup-script </h2>
+File backup-script
 1. Copy the file backup-script
 2. Save it in the directory /opt/backup-script/backup-script
 3. Change the permission of the file to turn it executable 
 	(type sudo chmod +x backup-script)
 
 
-<h2> Files backup-service.service and backup-timer.timer </h2>
+## Files backup-service.service and backup-timer.timer
 
 1. Copy the file backup-service.service and backup-timer.timer
 2. Save both file in the directory /etc/systemd/system
@@ -34,7 +34,7 @@ The script reads a configuration file that includes the following:
 6. Type sudo systemctl enable --now backup-service
 7. Type sudo systemctl enable --now backup-timer.timer
 
-<h2> How to backup files: </h2>
+## How to backup files: 
 
 1. Create a file called backup.conf typing vim backup.conf.
 2. Inform in the first line the IP address of the machine.
